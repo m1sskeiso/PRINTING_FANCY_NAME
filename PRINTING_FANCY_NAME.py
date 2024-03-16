@@ -1,3 +1,13 @@
+import colorama
+
+# Initialize colorama
+colorama.init()
+
+# Function to print text in rainbow colors
+def print_rainbow(text):
+    colors = [colorama.Fore.RED, colorama.Fore.YELLOW, colorama.Fore.GREEN, colorama.Fore.CYAN, colorama.Fore.BLUE, colorama.Fore.MAGENTA]
+    rainbow_text = ''
+    
 # Main program
 if __name__ == "__main__":
     
