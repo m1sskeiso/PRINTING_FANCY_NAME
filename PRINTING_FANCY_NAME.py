@@ -14,7 +14,7 @@ def print_rainbow(text):
     
 # Main program
 if __name__ == "__main__":
-    
+
     # Prompt user to input their name
     name = input("Enter your name: ")
     
@@ -22,7 +22,9 @@ if __name__ == "__main__":
     dream_job = input("Enter your dream job: ")
     
     # Print name in rainbow colors
-    print("\nYour name:", name)
+    print("\nYour name:")
+    print_rainbow(name)
     
     # Print dream job in rainbow colors
-    print("\nYour dream job: ", dream_job)
+    print("\nYour dream job: ")
+    print_rainbow(dream_job)
