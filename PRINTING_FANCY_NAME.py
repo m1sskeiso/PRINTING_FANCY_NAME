@@ -1,4 +1,5 @@
 import colorama
+import random
 
 # Initialize colorama
 colorama.init()
@@ -7,6 +8,9 @@ colorama.init()
 def print_rainbow(text):
     colors = [colorama.Fore.RED, colorama.Fore.YELLOW, colorama.Fore.GREEN, colorama.Fore.CYAN, colorama.Fore.BLUE, colorama.Fore.MAGENTA]
     rainbow_text = ''
+    for char in text:
+        rainbow_text += random.choice(colors) + char
+    print(rainbow_text + colorama.Style.RESET_ALL)
     
 # Main program
 if __name__ == "__main__":
